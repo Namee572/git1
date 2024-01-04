@@ -1,0 +1,12 @@
+package ex03;
+
+public class Ex07 {
+	
+	public static void main(String[] args) {
+		double d = 85.4d;
+		int score = (int)d; //실수 d를 정수형으로 출력해조
+		System.out.println("score = "+score);
+		System.out.println("d = "+d);
+	}
+
+}

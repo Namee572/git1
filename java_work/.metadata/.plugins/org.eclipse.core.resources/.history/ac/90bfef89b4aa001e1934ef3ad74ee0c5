@@ -1,0 +1,20 @@
+package baek;
+
+import java.util.Scanner;
+
+public class N2480 {
+	public static void main(String[] args) {
+		
+		Scanner scan = new Scanner(System.in);
+		int x = scan.nextInt();
+		int y = scan.nextInt();
+		int z = scan.nextInt();
+		
+		int m = 0; 
+
+		if(x = y = z) {
+			
+		m = 10000 + x*3;
+			System.out.print(m);
+		}
+}}

@@ -1,0 +1,11 @@
+package ex03;
+
+public class Ex05 {
+	
+	public static void main(String[] args) {
+		System.out.println("ln이 없으면 줄바꿈이 안됩니다.");
+		System.out.print("======");
+		System.out.println("ln이 있으면 줄바꿈이 됩니다.");
+	}
+
+}

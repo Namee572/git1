@@ -1,0 +1,14 @@
+package ex02;
+
+import java.util.Scanner;
+
+public class eeeeeeeee{
+    public static void main{
+        Scanner scan = new Scanner(System.in);
+        int A, B;
+        A = scan.NextInt();
+        B = scan.NextInt();
+        
+        System.out.println(A + B);  
+    }
+}

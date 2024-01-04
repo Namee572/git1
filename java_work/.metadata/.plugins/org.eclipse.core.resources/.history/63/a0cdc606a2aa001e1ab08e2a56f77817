@@ -1,0 +1,38 @@
+package baek;
+
+import java.util.Scanner;
+
+public class N2884 {
+
+// 45분 일찍 알람 설정하기
+// 하루의 시작은 0:0(자정)이고, 끝은 23:59(다음날 자정 1분 전)이다
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+
+		int H = scan.nextInt();
+		int M = scan.nextInt();
+
+		if (H >= 0 && H <= 23) {
+			if (M >= 0 && M <= 59) {
+
+				if (H == 0) {
+					H = (24 * 60 + M - 45) / 60;
+					M = (24 * 60 + M - 45) % 60;
+
+					if (H == 24) {
+						System.out.print("0 " + M);
+					} else {
+						System.out.print(H + " " + M);
+					}
+				}
+
+				else {
+					H = (H * 60 + M - 45) / 60;
+					M = (H * 60 + M - 45) % 60;
+					System.out.print(H + " " + M);
+				}
+			}
+		}
+	}
+}

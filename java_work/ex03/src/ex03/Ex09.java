@@ -1,0 +1,31 @@
+package ex03;
+
+import java.util.Scanner;
+
+/*
+ * 실수는 소수 두번째
+ * 
+ * 숫자를 입력받아 소수 둘째자리까지만 보여주세요...
+ * 요거 많이 씀
+ */
+public class Ex09 {
+		
+	public static void main(String[] args) {
+		
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("숫자 입력");
+		double d = scan.nextDouble();
+		
+		System.out.println("d = "+d);
+		
+		// 45.123123123*100
+		// 4512.123123 -> int
+		// 4512 / 100.0 -> double
+		// 45.12
+//		double trans_d = (int)(d*100)/100.0;
+//		System.out.println("trans_d = "+trans_d);
+		
+		System.out.println("trans_d = "+(int)(d*100)/100.0);
+	}
+}

@@ -1,0 +1,25 @@
+package baek;
+
+import java.util.Scanner;
+
+	public class Main{
+		public static void main(String[] args) {
+			
+			Scanner scan = new Scanner(System.in);
+			
+			int a = scan.nextInt();
+			int b = scan.nextInt();
+			int n;
+			
+			// a = 472 b = 385
+			
+			n = b%10; //1
+			System.out.println(a*n);
+			
+			n = (b/10)%10;//2
+			System.out.println(a*n);
+			
+			n = b/100; //3
+			System.out.println(a*n);
+	}	
+	}

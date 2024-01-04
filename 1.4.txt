@@ -1,0 +1,21 @@
+형상관리도구.....
+1. SVN
+2. Github
+3. ten
+
+ctrl c 강제종료
+
+처음에 서버에 올릴 때 정보 설정ㄱ
+$ git config --global user.name "Namee572"
+$ git config --global user.email myiddab@gmail.com
+
+모든 파일을 올리겠다 ㄱ
+git.add. 
+
+메모 123으로 승인하겠다 ㄱ
+git commit -m "123"
+
+서버에 올려라 ㄱ
+git push origin main
+
+(long)200000 요거랑 200000L 요거랑 같음

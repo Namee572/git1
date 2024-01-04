@@ -1,0 +1,19 @@
+package baek;
+
+
+
+public class Main{
+	
+	import java.util.Scanner;
+	
+    public static void main(String[] args){
+        Scanner scan = new Scanner(System.in);
+        int A, B;
+        A = scan.nextInt();
+        B = scan.nextInt();
+        if(0 < A && B < 10)
+        {
+        System.out.println((double)A/B);
+        }
+	}
+}

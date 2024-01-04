@@ -1,0 +1,36 @@
+package baek;
+
+import java.util.Scanner;
+
+public class N2884 {
+
+	public static void main (String[] args) {
+
+	Scanner scan = new Scanner(System.in);
+
+	int H = scan.nextInt();
+
+	int M = scan.nextInt();
+
+	if (H >= 0 && H <= 23) {
+
+		if (M >= 0 && M <= 59){
+
+			if(H == 0) {
+			H = (24*60 + M - 45) /60;
+			M = (H*60 + M - 45) %60;
+	
+				if(H == 24) {
+				System.out.print("0 ");
+				System.out.print(M);}
+				else{
+				System.out.print(H + " ");
+				System.out.print(M);}}
+
+			else {
+			H = (H*60 + M - 45) /60;
+			M = (H*60 + M - 45) %60;
+			System.out.print(H + " ");
+			System.out.print(M);}
+
+	}}}}
